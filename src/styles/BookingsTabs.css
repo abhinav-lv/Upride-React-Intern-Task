@@ -1,0 +1,41 @@
+.tabs-container {
+    display: flex;
+    width: 50%;
+    gap: 10%;
+    border-bottom: 2px solid #F5EEEE;
+}
+
+.tab-header{
+    cursor: pointer;
+}
+
+.tab-header-info{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.68);
+    padding: 13px 24px;
+}
+
+.selected-tab {
+    color: rgba(255, 87, 87, 1);
+}
+
+.pill-border {
+    position: relative;
+    top: 4px;
+    height: 5px;
+    padding: 0 13px;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #FC8F8F 0%, #FF5757 100%);
+}
+
+.disable {
+    display: none;
+}
+
+#loader-icon {
+    width: 36px;
+}

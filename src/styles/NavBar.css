@@ -1,0 +1,34 @@
+.navlink{
+    width: 100%;
+    height: 60px;    
+    
+    display: flex;
+    align-items: center;
+    padding-left: 12%;
+    gap: 27px;
+
+    cursor: pointer;
+    transition: all 100ms;
+}
+
+.navlink:hover{
+    background: rgba(217, 217, 217, 0.10);
+}
+
+.selected{
+    background: rgba(217, 217, 217, 0.20);
+}
+
+.navlink img{
+    width: 32px;
+}
+
+.navlink p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 21px;
+    color: white;
+    margin-bottom: 8px;
+}

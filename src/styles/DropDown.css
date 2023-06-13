@@ -1,0 +1,92 @@
+.dropdown-container{
+    margin: auto;
+    margin-top: 48px;
+    width: 256px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+
+    padding-left: 10px;
+    padding-bottom: 4px;
+}
+
+#menu-location-icon{
+    width: 19px;
+}
+
+#menu-dropdown-icon{
+    margin-top: 3px;
+    width: 13px;
+
+    cursor: pointer;
+}
+
+.rotate-left{
+    rotate: 90deg;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.header p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 15px;
+    color: rgba(30, 41, 61, 0.69);
+}
+
+form{
+    width: 100%;
+}
+
+.branch{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 8px 3px 8px 27px;
+}
+
+.branch label{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.35);
+}
+
+.branch input{
+    appearance: none;
+    -webkit-appearance: none;
+    
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+
+    border: 1px solid #FF5757;
+
+    cursor: pointer;
+}
+
+.branch input:checked{
+    /* The background will be the radio dot's color. */
+    background: linear-gradient(180deg, #FC8F8F 0%, #FF5757 100%);
+}
+
+form .br{
+    width: 95%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.hidden{
+    display: none;
+}
