@@ -39,3 +39,55 @@
 #loader-icon {
     width: 36px;
 }
+
+/* Responsive Styles */
+@media only screen and (max-width: 1700px) {
+    .tabs-container {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .tabs-container {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .tabs-container {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .tabs-container {
+        width: 90%;
+        gap: 9%;
+    }
+
+    .tab-header-info{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 15px;
+        color: rgba(0, 0, 0, 0.68);
+        padding: 13px 20px;
+    }
+
+    .selected-tab {
+        color: rgba(255, 87, 87, 1);
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .tabs-container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .tabs-container {
+        width: 100%;
+    }
+}

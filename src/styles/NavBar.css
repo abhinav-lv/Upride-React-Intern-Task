@@ -32,3 +32,21 @@
     color: white;
     margin-bottom: 8px;
 }
+
+@media only screen and (max-width: 1200px) {
+
+    .navlink img{
+        width: 30px;
+    }
+    
+    .navlink p {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        color: white;
+        margin-bottom: 8px;
+    }
+
+}

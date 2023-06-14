@@ -8,8 +8,8 @@ const PageSize = 8;
 // If package details exceed 28 characters, display shortened string
 const limitDetails = (details) => {
     const length = details.length
-    if(length > 28)
-        return details.slice(0,25) + '...'
+    if(length > 24)
+        return details.slice(0,22) + '...'
     return details
 }
 

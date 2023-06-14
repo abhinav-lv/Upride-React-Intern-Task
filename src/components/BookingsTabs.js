@@ -14,16 +14,6 @@ const getData = async (setBookingsData) => {
             ...res.data.online_bookings
         }
         const allBookingsKeys = Object.keys(allBookings)
-
-        // Sort bookings by order of recent bookings first
-        allBookingsKeys.sort((key1,key2) => {
-            const time1 = allBookings[key1].bookingEpochTime
-            const time2 = allBookings[key2].bookingEpochTime
-
-            if(time1 > time2) return -1
-            else if(time1 < time2) return 1
-            return 0
-        })  
     
         // Get array of bookings to display
         const bookings = {
@@ -67,8 +57,10 @@ const getData = async (setBookingsData) => {
                     bookings.completed.push(bookingItem)
             }
         })
-    
-        // console.log(bookings)
+        bookings.active.sort((booking1, booking2) => booking2.date - booking1.date)
+        bookings.completed.sort((booking1, booking2) => booking2.date - booking1.date)
+        bookings.cancelled.sort((booking1, booking2) => booking2.date - booking1.date)
+        console.log(bookings.active.map((booking) => booking.date))
         setBookingsData(bookings)
     }
     catch(err){

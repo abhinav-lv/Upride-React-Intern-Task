@@ -122,3 +122,82 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0px 0px 10px 10px;
 }
+
+/* -------------------------------------------------------- */
+/* Responsive styles */
+/* -------------------------------------------------------- */
+@media only screen and (max-width: 1700px) {
+    .bookings-container {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .bookings-container {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .bookings-container {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .bookings-container {
+        width: 90%;
+    }
+
+    .table-header {
+        padding-left: 32px;
+        font-size: 12px;
+    }
+    
+    .table-header p:nth-child(1){
+        padding-left: 12px;
+    }
+    
+    .booking-data {
+        padding: 24px 0 0 20px;
+    }
+    
+    .booking-name-container {
+        gap: 12px;
+    }
+    
+    #booking-user-icon {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .booking-name {
+        font-size: 13px;
+    }
+    
+    .booking-date {
+        font-size: 11px;
+    }
+    
+    .booking-details {
+        font-size: 13px;
+    }
+    
+    .booking-payment-mode {
+        width: fit-content;
+        padding: 4px 10px;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .bookings-container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .bookings-container {
+        width: 100%
+    }
+}
